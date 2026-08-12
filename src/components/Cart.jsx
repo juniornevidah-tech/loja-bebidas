@@ -8,7 +8,7 @@ function Cart({ aberta, fechar, abrirCheckout }) {
     return (
         <>
             {aberta && <div className="fixed inset-0 bg-black/50 z-40" onClick={fechar}></div>}
-            <div className={`fixed top-0 right-0 h-full w-80 bg-white shadow-xl z-50 transition-transform duration-300 flex flex-col p-6 overflow-y-auto ${aberta ? "translate-x-0" : "translate-x-full"}`}>
+            <div className={`fixed top-0 right-0 h-full w-full max-w-80 bg-white shadow-xl z-50 transition-transform duration-300 flex flex-col p-6 overflow-y-auto ${aberta ? "translate-x-0" : "translate-x-full"}`}>
 
                 <button onClick={fechar} className="self-end text-2xl mb-4">✕</button>
                 <h2 className="text-xl font-bold text-vinho mb-4">Seu Carrinho</h2>

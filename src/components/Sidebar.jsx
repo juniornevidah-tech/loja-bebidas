@@ -4,7 +4,7 @@ function Sidebar({ aberta, fechar, aoSelecionarCategoria }) {
     return (
         <>
             {aberta && <div className="fixed inset-0 bg-black/50 z-40" onClick={fechar}></div>}
-            <div className={`fixed top-0 left-0 h-full w-72 bg-white shadow-xl z-50 transition-transform duration-300 flex flex-col p-6 ${aberta ? "translate-x-0" : "-translate-x-full"}`}>
+            <div className={`fixed top-0 left-0 h-full w-[85vw] max-w-xs bg-white shadow-xl z-50 transition-transform duration-300 flex flex-col p-6 ${aberta ? "translate-x-0" : "-translate-x-full"}`}>
 
                 <div className="flex justify-between items-center mb-6">
                     <h1 className="text-xl font-bold text-vinho">Categorias</h1>

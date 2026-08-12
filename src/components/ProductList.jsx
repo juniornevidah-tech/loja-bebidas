@@ -10,7 +10,7 @@ function ProductList({ buscar, categoriaSelecionada }) {
     })
 
     return (
-       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-6">
+       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-6" id="produtos">
     {produtosFiltrados.map((produto) => (
         <ProductCard key={produto.id} produto={produto} />
     ))}

@@ -5,6 +5,7 @@ import ProductList from "./components/ProductList.jsx";
 import Cart from "./components/Cart.jsx";
 import Checkout from "./components/Checkout.jsx";
 import Contato from "./components/Contato.jsx";
+import Hero from "./components/Hero.jsx";
 function App() {
   const [siderAberta, setSiderAberta] = useState(false);
   const [buscarProdutos, setBuscarProdutos] = useState("");
@@ -17,6 +18,7 @@ function App() {
       <Header abrirSidebar={() => setSiderAberta(true)} buscar={buscarProdutos} aoBuscar={setBuscarProdutos}
        abrirCarrinho={() => setCarrinhoAberto(true)}/>
         <Sidebar aberta={siderAberta} fechar={() => setSiderAberta(false)} aoSelecionarCategoria={setCategoriaSelecionada}/>
+          <Hero />
           <ProductList buscar={buscarProdutos} categoriaSelecionada={categoriaSelecionada}/>
           <Contato />
           <Cart aberta={carrinhoAberto} fechar={() => setCarrinhoAberto(false)} abrirCheckout={() => setCheckoutAberto(true)}/>
